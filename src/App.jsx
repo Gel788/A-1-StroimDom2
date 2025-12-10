@@ -53,38 +53,37 @@ export default function App() {
     });
 
     // Бургер меню
-    console.log('Burger:', burger);
-    console.log('Nav:', nav);
-    
     if (burger && nav) {
-      console.log('Инициализация бургера...');
-      
       // Создаем оверлей один раз
       let overlay = document.querySelector('.nav-overlay');
       if (!overlay) {
         overlay = document.createElement('div');
         overlay.className = 'nav-overlay';
         document.body.appendChild(overlay);
-        console.log('Оверлей создан');
       }
 
-      // Клик на бургер
-      burger.addEventListener('click', (e) => {
-        console.log('Клик по бургеру!');
+      // Обработчик клика на бургер
+      const handleBurgerClick = (e) => {
         e.preventDefault();
         e.stopPropagation();
         toggleNav();
-      });
+      };
 
-      // Клик на оверлей
-      overlay.addEventListener('click', (e) => {
+      // Обработчик клика на оверлей
+      const handleOverlayClick = (e) => {
         e.preventDefault();
         closeNav();
-      });
+      };
+
+      // Добавляем обработчики
+      burger.addEventListener('click', handleBurgerClick);
+      overlay.addEventListener('click', handleOverlayClick);
       
-      console.log('Обработчики добавлены');
-    } else {
-      console.error('Бургер или навигация не найдены!');
+      // Cleanup при размонтировании
+      return () => {
+        burger.removeEventListener('click', handleBurgerClick);
+        overlay.removeEventListener('click', handleOverlayClick);
+      };
     }
 
     // Ссылки навигации
