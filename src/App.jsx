@@ -3,6 +3,7 @@ import Catalog from './Catalog';
 
 export default function App() {
   useEffect(() => {
+    // Элементы
     const tabs = document.querySelectorAll('.tab');
     const tabContents = document.querySelectorAll('.tab-content');
     const burger = document.getElementById('burger');
@@ -13,9 +14,31 @@ export default function App() {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = lightbox?.querySelector('img');
     const lightboxCap = lightbox?.querySelector('figcaption');
-    const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
-    const observedSections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
 
+    // Функция закрытия навигации
+    const closeNav = () => {
+      nav?.classList.remove('open');
+      burger?.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    // Функция открытия навигации
+    const openNav = () => {
+      nav?.classList.add('open');
+      burger?.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    // Переключение навигации
+    const toggleNav = () => {
+      if (nav?.classList.contains('open')) {
+        closeNav();
+      } else {
+        openNav();
+      }
+    };
+
+    // Табы
     tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
         tabs.forEach((t) => t.classList.remove('active'));
@@ -27,31 +50,43 @@ export default function App() {
       });
     });
 
-    burger?.addEventListener('click', (e) => {
-      e.stopPropagation();
-      nav?.classList.toggle('open');
-      burger?.classList.toggle('active');
-    });
+    // Бургер меню
+    if (burger) {
+      burger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleNav();
+      });
+    }
 
-    // Закрытие меню при клике вне его
-    document.addEventListener('click', (e) => {
-      if (nav?.classList.contains('open') && !nav.contains(e.target) && e.target !== burger && !burger?.contains(e.target)) {
-        nav?.classList.remove('open');
-        burger?.classList.remove('active');
-      }
-    });
+    // Закрытие при клике на оверлей
+    if (nav) {
+      const overlay = document.createElement('div');
+      overlay.className = 'nav-overlay';
+      document.body.appendChild(overlay);
+      
+      overlay.addEventListener('click', closeNav);
+    }
 
+    // Ссылки навигации
     document.querySelectorAll('a[href^="#"]').forEach((link) => {
       link.addEventListener('click', (e) => {
         const targetId = link.getAttribute('href')?.slice(1);
         const target = targetId ? document.getElementById(targetId) : null;
         if (target) {
           e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-          nav?.classList.remove('open');
-          burger?.classList.remove('active');
+          closeNav();
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 300);
         }
       });
+    });
+
+    // ESC для закрытия меню
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav?.classList.contains('open')) {
+        closeNav();
+      }
     });
 
     form?.addEventListener('submit', (e) => {
