@@ -1,13 +1,13 @@
 // Данные каталога дверей A-1 StroimDom
 export const catalogData = {
   categories: [
-    { id: 'all', name: 'Все двери', icon: '🚪' },
-    { id: 'invisible', name: 'Скрытые двери', icon: '🎭' },
-    { id: 'veneer', name: 'Шпон премиум', icon: '🪵' },
-    { id: 'glass', name: 'Стеклянные', icon: '💎' },
-    { id: 'entrance', name: 'Входные', icon: '🏠' },
-    { id: 'acoustic', name: 'Акустические', icon: '🔇' },
-    { id: 'thermo', name: 'С терморазрывом', icon: '❄️' },
+    { id: 'all', name: 'Все двери' },
+    { id: 'invisible', name: 'Скрытые двери' },
+    { id: 'veneer', name: 'Шпон премиум' },
+    { id: 'glass', name: 'Стеклянные' },
+    { id: 'entrance', name: 'Входные' },
+    { id: 'acoustic', name: 'Акустические' },
+    { id: 'thermo', name: 'С терморазрывом' },
   ],
   
   doors: [

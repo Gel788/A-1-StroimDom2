@@ -2363,8 +2363,8 @@ textarea:focus {
 .category-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 24px;
+  justify-content: center;
+  padding: 14px 28px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: 
@@ -2415,17 +2415,6 @@ textarea:focus {
 
 .category-btn.active:hover {
   transform: translateY(-2px) scale(1.02);
-}
-
-.category-icon {
-  font-size: 20px;
-  filter: grayscale(0.5);
-  transition: filter 0.3s ease;
-}
-
-.category-btn:hover .category-icon,
-.category-btn.active .category-icon {
-  filter: grayscale(0);
 }
 
 /* Сетка каталога */
@@ -2532,45 +2521,6 @@ textarea:focus {
 .catalog-card:hover .catalog-image {
   transform: scale(1.1);
   filter: brightness(1.1);
-}
-
-.catalog-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, 
-    transparent 0%, 
-    rgba(0, 0, 0, 0.8) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.catalog-card:hover .catalog-overlay {
-  opacity: 1;
-}
-
-.catalog-quick-view {
-  padding: 12px 24px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(10, 10, 15, 0.9);
-  color: var(--text);
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(20px);
-}
-
-.catalog-quick-view:hover {
-  background: var(--gradient-blue);
-  border-color: transparent;
-  color: #0a0a0f;
-  transform: scale(1.05);
 }
 
 /* Информация о товаре */

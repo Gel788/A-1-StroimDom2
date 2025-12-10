@@ -80,8 +80,7 @@ export default function Catalog() {
               className={`category-btn ${activeCategory === cat.id ? 'active' : ''}`}
               onClick={() => setActiveCategory(cat.id)}
             >
-              <span className="category-icon">{cat.icon}</span>
-              <span className="category-name">{cat.name}</span>
+              {cat.name}
             </button>
           ))}
         </div>
@@ -104,11 +103,6 @@ export default function Catalog() {
                   className="catalog-image"
                   loading="lazy"
                 />
-                <div className="catalog-overlay">
-                  <button className="catalog-quick-view">
-                    <span>👁</span> Быстрый просмотр
-                  </button>
-                </div>
               </div>
 
               {/* Информация */}
