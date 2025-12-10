@@ -107,7 +107,11 @@ export default function Catalog() {
                 <div className="catalog-overlay">
                   <button 
                     className="catalog-quick-view"
-                    onClick={() => setPreviewDoor(door)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      e.preventDefault();
+                      setPreviewDoor(door);
+                    }}
                   >
                     👁 Быстрый просмотр
                   </button>
@@ -177,19 +181,16 @@ export default function Catalog() {
       {previewDoor && (
         <div 
           className="modal" 
-          onClick={(e) => {
-            if (e.target.className === 'modal') {
+          onMouseDown={(e) => {
+            if (e.target.classList.contains('modal')) {
               setPreviewDoor(null);
             }
           }}
         >
-          <div className="modal-content">
+          <div className="modal-content" onMouseDown={(e) => e.stopPropagation()}>
             <button 
               className="modal-x" 
-              onClick={(e) => {
-                e.stopPropagation();
-                setPreviewDoor(null);
-              }}
+              onClick={() => setPreviewDoor(null)}
             >
               ×
             </button>
@@ -209,10 +210,7 @@ export default function Catalog() {
               <a 
                 href="#contacts" 
                 className="modal-btn" 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setPreviewDoor(null);
-                }}
+                onClick={() => setPreviewDoor(null)}
               >
                 Оставить заявку
               </a>
