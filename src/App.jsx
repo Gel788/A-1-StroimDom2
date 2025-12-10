@@ -214,35 +214,26 @@ export default function App() {
 
   return (
     <>
-      <header className="topbar">
-        <div className="container">
-          <div className="brand">
-            <div className="logo-circle">A-1</div>
-            <div>
-              <div className="brand-name">StroimDom</div>
-              <div className="brand-tag">Doors · Bespoke · Service</div>
-            </div>
-          </div>
+      {/* Новая навигация */}
+      <header className="header">
+        <div className="header-container">
+          <a href="#hero" className="logo">
+            <span className="logo-icon">A-1</span>
+            <span className="logo-text">StroimDom</span>
+          </a>
+
           <nav className="nav" id="nav">
-            <a href="#hero">Главная</a>
-            <a href="#cases">Кейсы</a>
-            <a href="#services">Услуги</a>
-            <a href="#catalog">Каталог</a>
-            <a href="#collections">Линейки</a>
-            <a href="#works">Работы</a>
-            <a href="#process">Процесс</a>
-            <a href="#testimonials">Отзывы</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contacts">Контакты</a>
+            <a href="#hero" className="nav-link">Главная</a>
+            <a href="#catalog" className="nav-link">Каталог</a>
+            <a href="#works" className="nav-link">Работы</a>
+            <a href="#services" className="nav-link">Услуги</a>
+            <a href="#contacts" className="nav-link">Контакты</a>
           </nav>
-          <div className="topbar-actions">
-            <a className="ghost-btn" href="#contacts">
-              Консультация
-            </a>
-            <a className="primary-btn" href="tel:+79687377555">
-              +7 968 737 75 55
-            </a>
-            <button className="burger" id="burger" aria-label="Открыть меню">
+
+          <div className="header-actions">
+            <a href="tel:+79687377555" className="header-phone">+7 (968) 737-75-55</a>
+            <a href="#contacts" className="header-btn">Заявка</a>
+            <button className="burger" id="burger" aria-label="Меню">
               <span></span>
               <span></span>
               <span></span>
