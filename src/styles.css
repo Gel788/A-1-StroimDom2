@@ -2998,14 +2998,14 @@ body:has(.nav.open) {
       rgba(26, 26, 38, 0.98) 0%, 
       rgba(18, 18, 26, 0.95) 100%);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 32px;
-  max-width: 1100px;
+  border-radius: 24px;
+  max-width: 900px;
   width: 100%;
-  max-height: 90vh;
+  max-height: 85vh;
   overflow-y: auto;
   box-shadow: 
-    0 50px 100px rgba(0, 0, 0, 0.9),
-    0 0 80px rgba(59, 130, 246, 0.3);
+    0 30px 80px rgba(0, 0, 0, 0.9),
+    0 0 60px rgba(59, 130, 246, 0.3);
   position: relative;
   animation: scaleIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -3051,8 +3051,8 @@ body:has(.nav.open) {
 .catalog-modal-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  padding: 48px;
+  gap: 32px;
+  padding: 32px;
 }
 
 .catalog-modal-image {
@@ -3087,11 +3087,11 @@ body:has(.nav.open) {
 .catalog-modal-info {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .catalog-modal-title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 800;
   margin: 0;
   line-height: 1.2;
@@ -3116,7 +3116,7 @@ body:has(.nav.open) {
 }
 
 .catalog-modal-price .price-value {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 900;
   background: var(--gradient-gold);
   -webkit-background-clip: text;
@@ -3269,22 +3269,27 @@ body:has(.nav.open) {
     font-size: 18px;
   }
 
+  .catalog-modal-content {
+    max-width: 700px;
+  }
+
   .catalog-modal-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
-    padding: 36px;
+    gap: 24px;
+    padding: 28px;
   }
 
   .catalog-modal-image {
     aspect-ratio: 16 / 9;
+    max-height: 300px;
   }
 
   .catalog-modal-title {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .catalog-modal-price .price-value {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
