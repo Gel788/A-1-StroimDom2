@@ -14,7 +14,7 @@ export default function App() {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = lightbox?.querySelector('img');
     const lightboxCap = lightbox?.querySelector('figcaption');
-    const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
+    const navLinks = Array.from(document.querySelectorAll('.nav-link[href^="#"]'));
     const observedSections = navLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
 
     // Функция закрытия навигации
