@@ -175,9 +175,24 @@ export default function Catalog() {
 
       {/* Модальное окно - простое */}
       {previewDoor && (
-        <div className="modal" onClick={() => setPreviewDoor(null)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-x" onClick={() => setPreviewDoor(null)}>×</button>
+        <div 
+          className="modal" 
+          onClick={(e) => {
+            if (e.target.className === 'modal') {
+              setPreviewDoor(null);
+            }
+          }}
+        >
+          <div className="modal-content">
+            <button 
+              className="modal-x" 
+              onClick={(e) => {
+                e.stopPropagation();
+                setPreviewDoor(null);
+              }}
+            >
+              ×
+            </button>
             
             <img src={previewDoor.image} alt={previewDoor.name} />
             
@@ -191,7 +206,14 @@ export default function Catalog() {
                 <span>Материал: {previewDoor.material}</span>
               </div>
 
-              <a href="#contacts" className="modal-btn" onClick={() => setPreviewDoor(null)}>
+              <a 
+                href="#contacts" 
+                className="modal-btn" 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setPreviewDoor(null);
+                }}
+              >
                 Оставить заявку
               </a>
             </div>
