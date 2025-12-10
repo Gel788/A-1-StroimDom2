@@ -49,6 +49,7 @@ export default function Catalog() {
   };
 
   return (
+    <>
     <section id="catalog" className="section catalog-section reveal">
       <div className="container">
         <div className="section-header">
@@ -176,29 +177,30 @@ export default function Catalog() {
           </div>
         )}
       </div>
+    </section>
 
-      {/* Модальное окно */}
-      {previewDoor && (
-        <div className="modal">
-          <div className="modal-backdrop" onClick={() => setPreviewDoor(null)}></div>
-          <div className="modal-content">
-            <button className="modal-x" onClick={() => setPreviewDoor(null)}>×</button>
-            <img src={previewDoor.image} alt={previewDoor.name} />
-            <div className="modal-body">
-              <h3>{previewDoor.name}</h3>
-              <p className="modal-price">{formatPrice(previewDoor.price)} ₽</p>
-              <div className="modal-info">
-                <span>Акустика: {previewDoor.acoustic}</span>
-                <span>Размер: {previewDoor.size}</span>
-                <span>Материал: {previewDoor.material}</span>
-              </div>
-              <a href="#contacts" className="modal-btn" onClick={() => setPreviewDoor(null)}>
-                Оставить заявку
-              </a>
+    {/* Модальное окно - вне section! */}
+    {previewDoor && (
+      <div className="modal">
+        <div className="modal-backdrop" onClick={() => setPreviewDoor(null)}></div>
+        <div className="modal-content">
+          <button className="modal-x" onClick={() => setPreviewDoor(null)}>×</button>
+          <img src={previewDoor.image} alt={previewDoor.name} />
+          <div className="modal-body">
+            <h3>{previewDoor.name}</h3>
+            <p className="modal-price">{formatPrice(previewDoor.price)} ₽</p>
+            <div className="modal-info">
+              <span>Акустика: {previewDoor.acoustic}</span>
+              <span>Размер: {previewDoor.size}</span>
+              <span>Материал: {previewDoor.material}</span>
             </div>
+            <a href="#contacts" className="modal-btn" onClick={() => setPreviewDoor(null)}>
+              Оставить заявку
+            </a>
           </div>
         </div>
-      )}
-    </section>
+      </div>
+    )}
+    </>
   );
 }
