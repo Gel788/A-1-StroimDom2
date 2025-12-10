@@ -177,41 +177,22 @@ export default function Catalog() {
         )}
       </div>
 
-      {/* Модальное окно - простое */}
+      {/* Модальное окно */}
       {previewDoor && (
-        <div 
-          className="modal" 
-          onMouseDown={(e) => {
-            if (e.target.classList.contains('modal')) {
-              setPreviewDoor(null);
-            }
-          }}
-        >
-          <div className="modal-content" onMouseDown={(e) => e.stopPropagation()}>
-            <button 
-              className="modal-x" 
-              onClick={() => setPreviewDoor(null)}
-            >
-              ×
-            </button>
-            
+        <div className="modal">
+          <div className="modal-backdrop" onClick={() => setPreviewDoor(null)}></div>
+          <div className="modal-content">
+            <button className="modal-x" onClick={() => setPreviewDoor(null)}>×</button>
             <img src={previewDoor.image} alt={previewDoor.name} />
-            
             <div className="modal-body">
               <h3>{previewDoor.name}</h3>
               <p className="modal-price">{formatPrice(previewDoor.price)} ₽</p>
-              
               <div className="modal-info">
                 <span>Акустика: {previewDoor.acoustic}</span>
                 <span>Размер: {previewDoor.size}</span>
                 <span>Материал: {previewDoor.material}</span>
               </div>
-
-              <a 
-                href="#contacts" 
-                className="modal-btn" 
-                onClick={() => setPreviewDoor(null)}
-              >
+              <a href="#contacts" className="modal-btn" onClick={() => setPreviewDoor(null)}>
                 Оставить заявку
               </a>
             </div>

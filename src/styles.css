@@ -3333,12 +3333,17 @@ body:has(.nav.open) {
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  animation: fadeIn 0.2s ease;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 
 .modal-content {
@@ -3350,6 +3355,7 @@ body:has(.nav.open) {
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
+  z-index: 2;
 }
 
 .modal-content img {
