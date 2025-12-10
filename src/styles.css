@@ -2405,26 +2405,32 @@ body:has(.nav.open) .nav-overlay {
   .topbar {
     backdrop-filter: blur(20px);
   }
-}
+
   .topbar-actions .ghost-btn {
     display: none;
   }
+
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
   }
+
   .cards.three {
     grid-template-columns: 1fr;
   }
+
   .certs-grid {
     grid-template-columns: 1fr;
   }
+
   .footer-grid {
     grid-template-columns: 1fr;
   }
+
   .stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .works-grid {
     grid-template-columns: 1fr;
   }
