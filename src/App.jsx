@@ -252,66 +252,78 @@ export default function App() {
       </header>
 
       <main>
-        <section id="hero" className="hero hero-full reveal">
-          <div className="hero-bg hero-aurora"></div>
-          <div className="hero-bg hero-gridlines"></div>
-          <div className="hero-bg hero-burst"></div>
-          <div className="container hero-grid">
-            <div className="hero-brand-panel glass-hero-card">
-              <div className="brand-mark">A-1</div>
-              <p className="eyebrow">Welcome</p>
-              <h1 className="serif hero-title">A-1 StroimDom</h1>
-              <h2 className="hero-subtitle">Двери, которые дают вау-эффект и поддерживают архитектуру интерьера</h2>
-              <p className="lead">
-                Скрытые системы, благородные шпоны, стекло и входные решения с терморазрывом. Мы закрываем подбор,
-                производство, монтаж и сервис одной командой.
+        <section id="hero" className="hero-new">
+          <div className="hero-background">
+            <div className="hero-gradient"></div>
+            <div className="hero-grid-pattern"></div>
+          </div>
+          
+          <div className="container">
+            <div className="hero-content">
+              <div className="hero-badge">
+                <span className="badge-dot"></span>
+                Premium Doors • Bespoke Design
+              </div>
+              
+              <h1 className="hero-heading">
+                Премиальные двери<br />
+                <span className="gradient-text">под ваш проект</span>
+              </h1>
+              
+              <p className="hero-description">
+                Премиальные двери для жилых и коммерческих объектов.<br />
+                Скрытые системы, шпон, стекло, терморазрыв — полный цикл от проекта до монтажа.
               </p>
-              <div className="hero-chips">
-                <span className="pill">Invisible</span>
-                <span className="pill alt">Acoustic 42 дБ</span>
-                <span className="pill">Glass / Bronze</span>
-                <span className="pill alt">ThermoSafe</span>
-              </div>
-              <div className="hero-actions">
-                <a className="primary-btn" href="#contacts">
-                  Запросить замер
+              
+              <div className="hero-buttons">
+                <a href="#catalog" className="btn-hero-primary">
+                  <span>Смотреть каталог</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </a>
-                <a className="ghost-btn" href="#cases">
-                  Смотреть кейсы
+                <a href="#contacts" className="btn-hero-secondary">
+                  Консультация
                 </a>
               </div>
-              <div className="stats">
-                <div className="stat-card">
-                  <div className="stat-glow"></div>
-                  <strong>15+ лет</strong>
-                  <span>опыта в премиум сегменте</span>
+              
+              <div className="hero-stats-row">
+                <div className="hero-stat">
+                  <div className="stat-number">15+</div>
+                  <div className="stat-label">лет опыта</div>
                 </div>
-                <div className="stat-card">
-                  <div className="stat-glow"></div>
-                  <strong>2400+</strong>
-                  <span>завершённых объектов</span>
+                <div className="hero-stat">
+                  <div className="stat-number">2400+</div>
+                  <div className="stat-label">проектов</div>
                 </div>
-                <div className="stat-card">
-                  <div className="stat-glow"></div>
-                  <strong>5 лет</strong>
-                  <span>расширенная гарантия</span>
+                <div className="hero-stat">
+                  <div className="stat-number">5 лет</div>
+                  <div className="stat-label">гарантия</div>
                 </div>
               </div>
             </div>
-            <div className="hero-visual wow">
-              <div className="hero-photo hero-cover" style={{ backgroundImage: "url('/works/IMG_5859.jpeg')" }}>
-                <div className="hero-overlay-card">
-                  <p className="eyebrow">Signature Invisible</p>
-                  <h3>Монолитные полотна</h3>
-                  <p className="muted">Стыки 2 мм, акустика 36–42 дБ, скрытые петли, магнитный притвор.</p>
-                  <div className="hero-mini-meta">
-                    <span>Simonswerk</span>
-                    <span>AGB</span>
-                    <span>RAL / Шпон АА</span>
-                  </div>
-                </div>
+            
+            <div className="hero-features">
+              <div className="feature-card">
+                <div className="feature-icon">🚪</div>
+                <h3>Invisible</h3>
+                <p>Скрытые двери заподлицо со стеной</p>
               </div>
-              <div className="floating-tag">Объект: резиденция, Барвиха</div>
+              <div className="feature-card">
+                <div className="feature-icon">🔇</div>
+                <h3>Acoustic</h3>
+                <p>Звукоизоляция до 42 дБ</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🌡️</div>
+                <h3>ThermoSafe</h3>
+                <p>Терморазрыв и утепление</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">💎</div>
+                <h3>Premium</h3>
+                <p>Шпон класса АА, стекло</p>
+              </div>
             </div>
           </div>
         </section>
