@@ -173,90 +173,27 @@ export default function Catalog() {
         )}
       </div>
 
-      {/* Модальное окно предпросмотра - Новый дизайн */}
+      {/* Модальное окно - простое */}
       {previewDoor && (
-        <div className="modal-preview" onClick={() => setPreviewDoor(null)}>
-          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
-            {/* Шапка */}
-            <div className="modal-header">
-              <div className="modal-badges">
-                {previewDoor.new && <span className="modal-badge new">Новинка</span>}
-                {previewDoor.popular && <span className="modal-badge hit">Хит продаж</span>}
-              </div>
-              <button 
-                className="modal-close" 
-                onClick={() => setPreviewDoor(null)}
-                aria-label="Закрыть"
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </button>
-            </div>
-
-            {/* Контент */}
+        <div className="modal" onClick={() => setPreviewDoor(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-x" onClick={() => setPreviewDoor(null)}>×</button>
+            
+            <img src={previewDoor.image} alt={previewDoor.name} />
+            
             <div className="modal-body">
-              {/* Изображение */}
-              <div className="modal-image-wrapper">
-                <img src={previewDoor.image} alt={previewDoor.name} className="modal-image" />
-              </div>
-
-              {/* Информация */}
+              <h3>{previewDoor.name}</h3>
+              <p className="modal-price">{formatPrice(previewDoor.price)} ₽</p>
+              
               <div className="modal-info">
-                <h2 className="modal-title">{previewDoor.name}</h2>
-                
-                <div className="modal-price-block">
-                  <div className="modal-price">
-                    <span className="modal-price-value">{formatPrice(previewDoor.price)} ₽</span>
-                    <span className="modal-price-label">от</span>
-                  </div>
-                </div>
-
-                {/* Характеристики */}
-                <div className="modal-specs">
-                  <div className="modal-spec">
-                    <div className="spec-icon">♪</div>
-                    <div className="spec-content">
-                      <div className="spec-name">Акустика</div>
-                      <div className="spec-val">{previewDoor.acoustic}</div>
-                    </div>
-                  </div>
-                  <div className="modal-spec">
-                    <div className="spec-icon">⊞</div>
-                    <div className="spec-content">
-                      <div className="spec-name">Размер</div>
-                      <div className="spec-val">{previewDoor.size}</div>
-                    </div>
-                  </div>
-                  <div className="modal-spec">
-                    <div className="spec-icon">◈</div>
-                    <div className="spec-content">
-                      <div className="spec-name">Материал</div>
-                      <div className="spec-val">{previewDoor.material}</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Особенности */}
-                <div className="modal-features">
-                  <div className="modal-features-title">Особенности</div>
-                  <ul className="modal-features-list">
-                    {previewDoor.features.slice(0, 4).map((feature, idx) => (
-                      <li key={idx}>{feature}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Кнопки действий */}
-                <div className="modal-actions">
-                  <a href="#contacts" className="modal-btn primary" onClick={() => setPreviewDoor(null)}>
-                    Запросить расчёт
-                  </a>
-                  <a href="tel:+79687377555" className="modal-btn secondary">
-                    Позвонить
-                  </a>
-                </div>
+                <span>Акустика: {previewDoor.acoustic}</span>
+                <span>Размер: {previewDoor.size}</span>
+                <span>Материал: {previewDoor.material}</span>
               </div>
+
+              <a href="#contacts" className="modal-btn" onClick={() => setPreviewDoor(null)}>
+                Оставить заявку
+              </a>
             </div>
           </div>
         </div>
