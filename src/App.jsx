@@ -27,8 +27,18 @@ export default function App() {
       });
     });
 
-    burger?.addEventListener('click', () => {
+    burger?.addEventListener('click', (e) => {
+      e.stopPropagation();
       nav?.classList.toggle('open');
+      burger?.classList.toggle('active');
+    });
+
+    // Закрытие меню при клике вне его
+    document.addEventListener('click', (e) => {
+      if (nav?.classList.contains('open') && !nav.contains(e.target) && e.target !== burger && !burger?.contains(e.target)) {
+        nav?.classList.remove('open');
+        burger?.classList.remove('active');
+      }
     });
 
     document.querySelectorAll('a[href^="#"]').forEach((link) => {
@@ -39,6 +49,7 @@ export default function App() {
           e.preventDefault();
           target.scrollIntoView({ behavior: 'smooth' });
           nav?.classList.remove('open');
+          burger?.classList.remove('active');
         }
       });
     });
