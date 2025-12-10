@@ -401,7 +401,7 @@ a {
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 10000;
   position: relative;
   transition: all 0.3s ease;
 }
@@ -2588,7 +2588,7 @@ textarea:focus {
   inset: 0;
   background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(8px);
-  z-index: 999;
+  z-index: 9997;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -2620,7 +2620,7 @@ body:has(.nav.open) .nav-overlay {
     backdrop-filter: blur(30px) saturate(180%);
     flex-direction: column;
     gap: 8px;
-    z-index: 1000;
+    z-index: 9998;
     transform: translateX(100%);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;
