@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Catalog from './Catalog';
 
 export default function App() {
   useEffect(() => {
@@ -171,6 +172,7 @@ export default function App() {
             <a href="#hero">Главная</a>
             <a href="#cases">Кейсы</a>
             <a href="#services">Услуги</a>
+            <a href="#catalog">Каталог</a>
             <a href="#collections">Линейки</a>
             <a href="#works">Работы</a>
             <a href="#process">Процесс</a>
@@ -607,6 +609,9 @@ export default function App() {
             </figure>
           </div>
         </section>
+
+        {/* Каталог с разделами */}
+        <Catalog />
 
         <section id="process" className="section gray reveal">
           <div className="container section-header">
