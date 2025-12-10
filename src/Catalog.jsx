@@ -5,6 +5,7 @@ export default function Catalog() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [sortBy, setSortBy] = useState('popular');
   const [priceRange, setPriceRange] = useState([0, 300000]);
+  const [previewDoor, setPreviewDoor] = useState(null);
 
   // Фильтрация и сортировка
   const filteredDoors = useMemo(() => {
@@ -103,6 +104,14 @@ export default function Catalog() {
                   className="catalog-image"
                   loading="lazy"
                 />
+                <div className="catalog-overlay">
+                  <button 
+                    className="catalog-quick-view"
+                    onClick={() => setPreviewDoor(door)}
+                  >
+                    👁 Быстрый просмотр
+                  </button>
+                </div>
               </div>
 
               {/* Информация */}
@@ -163,6 +172,79 @@ export default function Catalog() {
           </div>
         )}
       </div>
+
+      {/* Модальное окно предпросмотра */}
+      {previewDoor && (
+        <div className="catalog-modal" onClick={() => setPreviewDoor(null)}>
+          <div className="catalog-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="catalog-modal-close" 
+              onClick={() => setPreviewDoor(null)}
+              aria-label="Закрыть"
+            >
+              ×
+            </button>
+
+            <div className="catalog-modal-grid">
+              {/* Изображение */}
+              <div className="catalog-modal-image">
+                <img src={previewDoor.image} alt={previewDoor.name} />
+                {/* Бейджи */}
+                <div className="catalog-modal-badges">
+                  {previewDoor.new && <span className="badge badge-new">Новинка</span>}
+                  {previewDoor.popular && <span className="badge badge-popular">Хит</span>}
+                </div>
+              </div>
+
+              {/* Информация */}
+              <div className="catalog-modal-info">
+                <h2 className="catalog-modal-title">{previewDoor.name}</h2>
+                
+                <div className="catalog-modal-price">
+                  <span className="price-label">Цена от</span>
+                  <span className="price-value">{formatPrice(previewDoor.price)} ₽</span>
+                </div>
+
+                <div className="catalog-modal-specs">
+                  <div className="spec-row">
+                    <span className="spec-label">🔇 Акустика:</span>
+                    <span className="spec-value">{previewDoor.acoustic}</span>
+                  </div>
+                  <div className="spec-row">
+                    <span className="spec-label">📏 Размер:</span>
+                    <span className="spec-value">{previewDoor.size}</span>
+                  </div>
+                  <div className="spec-row">
+                    <span className="spec-label">🎨 Материал:</span>
+                    <span className="spec-value">{previewDoor.material}</span>
+                  </div>
+                </div>
+
+                <div className="catalog-modal-divider"></div>
+
+                <h3 className="catalog-modal-subtitle">Характеристики</h3>
+                <ul className="catalog-modal-features">
+                  {previewDoor.features.map((feature, idx) => (
+                    <li key={idx}>
+                      <span className="feature-check">✓</span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="catalog-modal-actions">
+                  <button className="catalog-modal-btn primary">
+                    Запросить предложение
+                  </button>
+                  <button className="catalog-modal-btn secondary">
+                    Позвонить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
