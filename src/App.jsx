@@ -19,16 +19,27 @@ export default function App() {
 
     // Функция закрытия навигации
     const closeNav = () => {
+      const scrollY = document.body.style.top;
       nav?.classList.remove('open');
       burger?.classList.remove('active');
       document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      if (scrollY) {
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      }
     };
 
     // Функция открытия навигации
     const openNav = () => {
+      const scrollY = window.scrollY;
       nav?.classList.add('open');
       burger?.classList.add('active');
       document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
     };
 
     // Переключение навигации
