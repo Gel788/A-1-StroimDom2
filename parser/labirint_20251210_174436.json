@@ -1,0 +1,474 @@
+[
+  {
+    "name": "Полный каталог дверей",
+    "price": null,
+    "url": "https://labirintdoors.ru/katalog2",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Двери с зеркалом",
+    "price": null,
+    "url": "https://labirintdoors.ru/vhodnye-dveri-s-zerkalom",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Белые двери",
+    "price": null,
+    "url": "https://labirintdoors.ru/belye-vhodnye-dveri",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Двери под покраску",
+    "price": null,
+    "url": "https://labirintdoors.ru/vhodnye-dveri-pod-pokrasku",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Двери с терморазрывом",
+    "price": null,
+    "url": "https://labirintdoors.ru/vhodnye-dveri-s-termorazryvom",
+    "category": "С терморазрывом",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Двери с электронным замком",
+    "price": null,
+    "url": "https://labirintdoors.ru/vhodnye-dveri-s-elektronnym-zamkom",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входная дверь Смартлаб",
+    "price": null,
+    "url": "https://labirintdoors.ru/katalog/vhodnaya-dver-smartlab",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт LEOLAB от 53 900 руб.",
+    "price": 53900,
+    "url": "https://labirintdoors.ru/katalog/leolab",
+    "category": "Новинки 2025",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входная дверь Лабиринт SKYLAB от 45 300 руб.",
+    "price": 45300,
+    "url": "https://labirintdoors.ru/katalog/skylab",
+    "category": "Новинки 2025",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входная дверь Лабиринт EVOLAB от 45 300 руб.",
+    "price": 45300,
+    "url": "https://labirintdoors.ru/katalog/evolab",
+    "category": "Новинки 2025",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт PIANO от 43 900 руб.",
+    "price": 43900,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-piano",
+    "category": "Хиты продаж",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт ROYAL от 45 300 руб.",
+    "price": 45300,
+    "url": "https://labirintdoors.ru/katalog/royal",
+    "category": "Хиты продаж",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт ISSIDA от 53 900 руб.",
+    "price": 53900,
+    "url": "https://labirintdoors.ru/katalog/issida",
+    "category": "Хиты продаж",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт STORM от 44 500 руб.",
+    "price": 44500,
+    "url": "https://labirintdoors.ru/katalog/storm",
+    "category": "Хиты продаж",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт CREDOR от 39 500 руб.",
+    "price": 39500,
+    "url": "https://labirintdoors.ru/katalog/credor",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт KARMINA от 38 900 руб.",
+    "price": 38900,
+    "url": "https://labirintdoors.ru/katalog/karmina",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт ACUSTICLAB от 46 900 руб.",
+    "price": 46900,
+    "url": "https://labirintdoors.ru/katalog/acusticlab",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт PLATINUM от 42 900 руб.",
+    "price": 42900,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-platinum",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт BETON от 41 500 руб.",
+    "price": 41500,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-beton",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт INFINITY от 39 500 руб.",
+    "price": 39500,
+    "url": "https://labirintdoors.ru/katalog/infinity",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт NEW YORK от 42 500 руб.",
+    "price": 42500,
+    "url": "https://labirintdoors.ru/katalog/newyork-labirint",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт MEGAPOLIS от 41 900 руб.",
+    "price": 41900,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-megapolis",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт GRAND от 44 300 руб.",
+    "price": 44300,
+    "url": "https://labirintdoors.ru/katalog/grand",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт PIANO от 43 900 руб.",
+    "price": 43900,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-piano",
+    "category": "Хиты продаж",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт URBAN от 39 500 руб.",
+    "price": 39500,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-urban",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт ART от 37 300 руб.",
+    "price": 37300,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-art-grafit",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт ROYAL от 45 300 руб.",
+    "price": 45300,
+    "url": "https://labirintdoors.ru/katalog/royal",
+    "category": "Хиты продаж",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт TRENDO от 40 900 руб.",
+    "price": 40900,
+    "url": "https://labirintdoors.ru/katalog/trendo",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт VERSAL от 40 900 руб.",
+    "price": 40900,
+    "url": "https://labirintdoors.ru/katalog/versal",
+    "category": "Белые двери",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт LINE WHITE от 37 500 руб.",
+    "price": 37500,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-line-white",
+    "category": "Белые двери",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт Орлеан от 34 500 руб.",
+    "price": 34500,
+    "url": "https://labirintdoors.ru/katalog/vhodnye-dveri-labirint-orlean",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт CARBON от 33 900 руб.",
+    "price": 33900,
+    "url": "https://labirintdoors.ru/katalog/carbon",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт PAZL от 33 900 руб.",
+    "price": 33900,
+    "url": "https://labirintdoors.ru/katalog/pazl",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт LOFT от 32 300 руб.",
+    "price": 32300,
+    "url": "https://labirintdoors.ru/katalog/loft",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт ACUSTICLAB от 46 900 руб.",
+    "price": 46900,
+    "url": "https://labirintdoors.ru/katalog/acusticlab",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт SILVER от 37 900 руб.",
+    "price": 37900,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-silver",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт Орлеан от 34 500 руб.",
+    "price": 34500,
+    "url": "https://labirintdoors.ru/katalog/vhodnye-dveri-labirint-orlean",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт CLASSIC шагрень черная от 31 900 руб.",
+    "price": 31900,
+    "url": "https://labirintdoors.ru/katalog/classic",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт CLASSIC антик медный от 31 900 руб.",
+    "price": 31900,
+    "url": "https://labirintdoors.ru/katalog/classic2",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входная дверь Фрост 7024 со стеклопакетом",
+    "price": null,
+    "url": "https://labirintdoors.ru/katalog/vhodnaya-dver-frost-7024-so-steklopaketom",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входная дверь для дома со стеклом SCANDIA",
+    "price": null,
+    "url": "https://labirintdoors.ru/katalog/vhodnaya-dver-dlya-doma-so-steklom",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт NORD PLUS",
+    "price": null,
+    "url": "https://labirintdoors.ru/katalog/nord",
+    "category": "С терморазрывом",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входная дверь Имперо со стеклом",
+    "price": null,
+    "url": "https://labirintdoors.ru/katalog/vhodnaya-dver-impero-so-steklom",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Уличная дверь Сияна со стеклопакетом",
+    "price": null,
+    "url": "https://labirintdoors.ru/katalog/ulichnaya-dver-siyana-so-steklopaketom",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Дверь входная с терморазрывом Полярис лайт",
+    "price": null,
+    "url": "https://labirintdoors.ru/katalog/dver-vhodnaya-s-termorazryvom-polyaris-layt",
+    "category": "С терморазрывом",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Уличные двери Верса со стеклом за 55 900 руб.",
+    "price": 55900,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-versa",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Аляска лайт с терморазрывом от 38 900 руб.",
+    "price": 38900,
+    "url": "https://labirintdoors.ru/katalog/alyaska-lite",
+    "category": "С терморазрывом",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт ATLANTIC от 48 900 руб.",
+    "price": 48900,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-atlantic",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт TUNDRA Plus за 62 500 руб.",
+    "price": 62500,
+    "url": "https://labirintdoors.ru/katalog/kollektsiya-tundra",
+    "category": "С терморазрывом",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт Лондон от 50 900 руб.",
+    "price": 50900,
+    "url": "https://labirintdoors.ru/katalog/london-termo",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт Термомагнит от 40 500 руб.",
+    "price": 40500,
+    "url": "https://labirintdoors.ru/katalog/termo-magnit",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Входные двери Лабиринт Термо Лайт от 34 900 руб.",
+    "price": 34900,
+    "url": "https://labirintdoors.ru/katalog/termolite",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Все входные двери",
+    "price": null,
+    "url": "https://labirintdoors.ru/katalog2",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Двери в квартиру",
+    "price": null,
+    "url": "https://labirintdoors.ru/vhodnye-dveri-v-kvartiru",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Двери в коттедж",
+    "price": null,
+    "url": "https://labirintdoors.ru/vhodnye-dveri-v-kottedgh",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Двери для дачи",
+    "price": null,
+    "url": "https://labirintdoors.ru/vhodnye-dveri-dlya-dachi",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Двери для частного дома",
+    "price": null,
+    "url": "https://labirintdoors.ru/vhodnye-dveri-dlya-chastnogo-doma",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "Двери с электронным замком",
+    "price": null,
+    "url": "https://labirintdoors.ru/vhodnye-dveri-s-elektronnym-zamkom",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  },
+  {
+    "name": "О заводе «Лабиринт»",
+    "price": null,
+    "url": "https://labirintdoors.ru/o-nas",
+    "category": "Основной каталог",
+    "image": null,
+    "image_url": null
+  }
+]
